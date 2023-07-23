@@ -103,10 +103,16 @@ header {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transition: height .2s ease;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
 
 }
-.wrapper .active {
+
+.wrapper.active-popup {
+    transform: scale(1);
+}
+
+.wrapper.active {
     height: 520px;
 
 }
@@ -123,9 +129,9 @@ header {
 
 }
 
-.wrapper .active .form-box.login {
+.wrapper.active .form-box.login {
     transition: none;
-    transform: translateX(400px);
+    transform: translateX(-400px);
 }
 
 .wrapper .form-box.register {
@@ -134,9 +140,9 @@ header {
     transform: translateX(400px);
 }
 
-.wrapper .active .form-box.register {
+.wrapper.active .form-box.register {
     transition: transform .18s ease;
-    transform: translateX(0px);
+    transform: translateX(0);
 }
 
 .wrapper .icon-close {
