@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: './Coffee\ and\ Clean\ with\ me.jpg' no-repeat;
+    background: url(./Keyboard.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 
